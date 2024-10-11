@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <aside>
+        <div class="logo-container">
+            <img src="odin-lined.png" alt="odin" class="odin"></img>
+            <p class="odin-text">ODIN</p>
+        </div>
+        <p class="credit">Photo by Chris Ostrowski</p>
+    </aside>
+    <main>
+        <div class="main-top">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero error, aut voluptate saepe earum impedit
+                necessitatibus cum explicabo odit sit, expedita sequi aliquid pariatur eligendi ex beatae hic. Ipsam,
+                maxime!</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form-container">
+            <p class="form-title">Let's Do This!</p>
+            <form action="https://example.com/post" method="post">
+                <div class="input-container">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" class="input"
+                        required>
+                    <p class="warning">*Required</p>
+                </div>
+                <div class="input-container">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" class="input"
+                        required>
+                    <p class="warning">*Required</p>
+                </div>
+                <div class="input-container">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" placeholder="example@gmail.com" class="input" required>
+                    <p class="warning">*Required</p>
+                </div>
+                <div class="input-container">
+                    <label for="phone">First Name</label>
+                    <input type="text" id="phone" name="Phone" placeholder="08XXXXXXXXXX" class="input" minlength="10"
+                        required>
+                    <p class="warning">*Required</p>
+                </div>
+                <div class="input-container">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" class="input"
+                        required minlength="8">
+                    <p class="warning">*Minimum 8 character</p>
+                </div>
+                <div class="input-container">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" class="input"
+                        required minlength="8">
+                    <p class="warning">*Minimum 8 character</p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
