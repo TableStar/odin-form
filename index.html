@@ -26,7 +26,7 @@
         </div>
         <div class="form-container">
             <p class="form-title">Let's Do This!</p>
-            <form action="https://example.com/post" method="post">
+            <form action="" method="post" id="main-form">
                 <div class="input-container">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" name="firstName" placeholder="Your First Name" class="input"
@@ -41,28 +41,31 @@
                 </div>
                 <div class="input-container">
                     <label for="Email">Email</label>
-                    <input type="email" id="Email" name="Email" placeholder="example@gmail.com" class="input" required>
-                    <p class="warning">*Required</p>
+                    <input type="email" id="Email" name="email" placeholder="example@gmail.com" class="input" required>
+                    <p class="warning">need valid email</p>
                 </div>
                 <div class="input-container">
-                    <label for="phone">First Name</label>
-                    <input type="text" id="phone" name="Phone" placeholder="08XXXXXXXXXX" class="input" minlength="10"
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="08XXXXXXXXXX" class="input" minlength="10"
                         required>
-                    <p class="warning">*Required</p>
+                    <p class="warning">minimum 10 number</p>
                 </div>
                 <div class="input-container">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" class="input"
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="*********" class="input"
                         required minlength="8">
                     <p class="warning">*Minimum 8 character</p>
                 </div>
                 <div class="input-container">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" class="input"
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="*********" class="input"
                         required minlength="8">
                     <p class="warning">*Minimum 8 character</p>
                 </div>
             </form>
+        </div>
+        <div class="button-container">
+            <button type="submit" form="main-form">Create Account</button>
         </div>
     </main>
 </body>
